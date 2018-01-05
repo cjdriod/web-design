@@ -114,20 +114,20 @@
             <hr>
             <h4 style="color:#534f46;">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet<br/>consectetur, adipisci velit,sed quia non numquam</h4>
               <br/>
-              <input type="submit" name="submit" value="ALL" class="choice" id="PRE">
-              <input type="submit" name="submit" value="WEB" class="choice">
-              <input type="submit" name="submit" value="APPS" class="choice">
-              <input type="submit" name="submit" value="ICONS" class="choice">
+              <button id="btn1_1" class="choice" onclick="changeImage1();">ALL</button>
+              <button id="btn2_1" class="choice" onclick="changeImage2();">WEB</button>
+              <button id="btn3_1" class="choice" onclick="changeImage3();">APPS</button>
+              <button id="btn4_1" class="choice" onclick="changeImage4();">ICONS</button>
               <br/>
                 <div id="mac">
           <table border="0">
               <tr>
-                  <td><img src="img/mac1.png"/>ISOMETRIC PERSPECTIVE MOCK-UP</td>
-                  <td><img src="img/mac2.png"/>TIME ZONE APP UI</td>
+                  <td><img src="img/mac1.png" id="img1"/>ISOMETRIC PERSPECTIVE MOCK-UP</td>
+                  <td><img src="img/mac2.png"id="img2"/>TIME ZONE APP UI</td>
               </tr>
               <tr>
-                  <td><img src="img/mac3.png"/>VIRO MEDIA PLAYER UI</td>
-                  <td><img src="img/mac4.png"/>BLOG/MAGAZINE FLAT UI KIT</td>
+                  <td><img src="img/mac3.png"id="img3"/>VIRO MEDIA PLAYER UI</td>
+                  <td><img src="img/mac4.png"id="img4"/>BLOG/MAGAZINE FLAT UI KIT</td>
               </tr>
         </table>
        </div>
@@ -171,6 +171,66 @@
       <!-- /.container -->
     </footer>
 
+      <script>
+        function changeImage1()
+          {
+              var img = document.getElementById("img1");
+              img.src="img/mac1.png";
+              var img = document.getElementById("img2");
+              img.src="img/mac2.png";
+              var img = document.getElementById("img3");
+              img.src="img/mac3.png";
+              var img = document.getElementById("img4");
+              img.src="img/mac4.png";
+              return false;
+          }
+          
+          function changeImage2()
+          {
+              var img = document.getElementById("img1");
+              img.src="img/mac1.png";
+              var img = document.getElementById("img2");
+              img.src="img/mac5.png";
+              var img = document.getElementById("img3");
+              img.src="img/mac6.png";
+              var img = document.getElementById("img4");
+              img.src="img/mac7.png";
+              return false;
+          }
+          
+          function changeImage3()
+          {
+              var img = document.getElementById("img1");
+              img.src="img/mac8.png";
+              var img = document.getElementById("img2");
+              img.src="img/mac9.png";
+              var img = document.getElementById("img3");
+              img.src="img/mac10.png";
+              var img = document.getElementById("img4");
+              img.src="img/mac11.png";
+              return false;
+          }
+          
+          function changeImage4()
+          {
+              var img = document.getElementById("img1");
+              img.src="img/mac12.png";
+              var img = document.getElementById("img2");
+              img.src="img/mac13.png";
+              var img = document.getElementById("img3");
+              img.src="img/mac14.png";
+              var img = document.getElementById("img4");
+              img.src="img/mac15.png";
+              return false;
+          }
+      </script>
+         
+      
+      
+      
+      
+      
+      
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
